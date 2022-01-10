@@ -103,12 +103,12 @@ for word_word in words:
         length[len(word_word)] += 1
 
 lengths = sorted(length.items())
-title = "LEN|  OCCURRENCES  |NR"
+title = "LEN|    OCCURRENCES    |NR"
 # sep = "|"
 print(title)
 import pprint
 for i, couple in lengths:
     graph = "*" * int(couple)
-    print(f"{i:>3}| {graph:13} |{couple}",
+    print(f"{i:>3}| {graph:17} |{couple}",
           sep="\n"
           )
